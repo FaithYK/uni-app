@@ -6,8 +6,8 @@
 					{{this_type.name+''}}
 					<image :class="is_type?'active':''" class="icon" src="../../static/img/help/donw.png"></image>
 				</view>
-				<view @click="noviceZone" :class="param.order===5?'active':''" class="text">新手区</view>
-				<view @click="masterZone" :class="param.order===2?'active':''" class="text">高手区</view>
+				<view @click="changeZone(5)" :class="param.order===5?'active':''" class="text">新手区</view>
+				<view @click="changeZone(2)" :class="param.order===2?'active':''" class="text">高手区</view>
 			</view>
 			<view class="seek-box">
 				<image class="icon" src="../../static/img/help/seek.png"></image>
@@ -177,13 +177,11 @@
 				this.this_type = item;
 				this.is_type = false
 			},
-			//切换新手区
-			noviceZone: function() {
-
-			},
-			//切换高手区
-			masterZone: function() {
-
+			//切换新手区/切换高手区
+			changeZone: function(t) {
+				console.log(t)
+				this.param.order = this.param.order === t ? 0 : t,
+				this.seekChange()
 			},
 			//搜索任务
 			searchTask: function(event) {
@@ -191,13 +189,18 @@
 				this.param.search = event.target.value
 				console.log(this.param)
 			},
+			//跳转详情页
 			toTask: function(index) {
 				console.log(index)
 				uni.navigateTo({
 					url: '../task/taskInfo?id=' + index
 				})
+			},
+			seekChange: function() {
+				this.param.page = 1,
+				this.is_data = true,
+				this.getDataList()
 			}
-
 		}
 	}
 </script>

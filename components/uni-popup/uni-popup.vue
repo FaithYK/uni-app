@@ -1,9 +1,9 @@
 <template>
 	<view catchtouchmove="__e" :class="['uni-popup data-v-21dec862',popupstyle]" v-if="showPopup">
-		<uni-transition bind:__l="__l" bind:click="__e" class="data-v-21dec862" :duration="duration"
+		<uni-transition @:click="__e" class="data-v-21dec862" :duration="duration"
 			:modeClass="['fade']" v-show="showTrans" :styles="maskClass" v-if="maskShow">
 		</uni-transition>
-		<uni-transition bind:__l="__l" bind:click="__e" class="data-v-21dec862" :duration="duration" :modeClass="ani"
+		<uni-transition @click="__e" class="data-v-21dec862" :duration="duration" :modeClass="ani"
 			v-show="showTrans" :styles="transClass" <view catchtap="__e" class="uni-popup__wrapper-box data-v-21dec862">
 	</view>
 	</uni-transition>
@@ -15,7 +15,7 @@
 	export default {
 		name: "UniPopup",
 		components: {
-			uniTransition
+			"uni-transition" : uniTransition
 		},
 		components: {
 			uniTransition: function() {
@@ -43,13 +43,13 @@
 				popup: this
 			};
 		},
-		mixins: [i.default],
+		// mixins: [i.default],
 		watch: {
 			type: {
 				handler: function(t) {
 					this[this.config[t]]();
 				},
-				immediate: !0
+				immediate: true
 			},
 			maskClick: function(t) {
 				this.mkclick = t;
