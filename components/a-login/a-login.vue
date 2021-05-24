@@ -6,10 +6,10 @@
 					<image class="logo" src="../../static/img/login/logo.png"></image>
 					<image class="text" src="../../static/img/login/text.png"></image>
 					<button bindgetuserinfo="getuserinfo" class="login-but" openType="getUserInfo" type="default"
-						withCredentials="true" v-:if="!is_login">
+						withCredentials="true" v-if="!is_login">
 						<image class="wx" src="../../static/img/login/wx.png"></image>微信登录
 					</button>
-					<block wx:else>
+					<block v-else>
 						<view class="bind-phone" v-if="!is_bind_phone">
 							<button bindgetphonenumber="__e" class="bind-but" openType="getPhoneNumber">一键绑定手机号</button>
 							<button @click="codeBindFn" class="code-but">验证码绑定手机号</button>

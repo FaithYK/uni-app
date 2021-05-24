@@ -103,7 +103,7 @@ var components
 try {
   components = {
     taskItem: function() {
-      return __webpack_require__.e(/*! import() | components/task-item/task-item */ "components/task-item/task-item").then(__webpack_require__.bind(null, /*! @/components/task-item/task-item.vue */ 39))
+      return __webpack_require__.e(/*! import() | components/task-item/task-item */ "components/task-item/task-item").then(__webpack_require__.bind(null, /*! @/components/task-item/task-item.vue */ 59))
     }
   }
 } catch (e) {
@@ -158,7 +158,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var nodata = function nodata() {__webpack_require__.e(/*! require.ensure | components/noData/noData */ "components/noData/noData").then((function () {return resolve(__webpack_require__(/*! ../../components/noData/noData.vue */ 46));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var taskItem = function taskItem() {__webpack_require__.e(/*! require.ensure | components/task-item/task-item */ "components/task-item/task-item").then((function () {return resolve(__webpack_require__(/*! ../../components/task-item/task-item.vue */ 39));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var aNoData = function aNoData() {__webpack_require__.e(/*! require.ensure | components/a-noData/a-noData */ "components/a-noData/a-noData").then((function () {return resolve(__webpack_require__(/*! ../../components/a-noData/a-noData.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var nodata = function nodata() {__webpack_require__.e(/*! require.ensure | components/noData/noData */ "components/noData/noData").then((function () {return resolve(__webpack_require__(/*! ../../components/noData/noData.vue */ 66));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var taskItem = function taskItem() {__webpack_require__.e(/*! require.ensure | components/task-item/task-item */ "components/task-item/task-item").then((function () {return resolve(__webpack_require__(/*! ../../components/task-item/task-item.vue */ 59));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var aNoData = function aNoData() {__webpack_require__.e(/*! require.ensure | components/a-noData/a-noData */ "components/a-noData/a-noData").then((function () {return resolve(__webpack_require__(/*! ../../components/a-noData/a-noData.vue */ 71));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 
 
 
@@ -248,6 +248,8 @@ var _default = {
   methods: {
     getDataList: function getDataList() {
       this.data_list = [{
+        id: 0,
+        is_top: true,
         head_img: '',
         title: '简单一分钟任务',
         type_name: '简单注册',
@@ -257,6 +259,8 @@ var _default = {
         price: '30' },
 
       {
+        id: 1,
+        is_top: true,
         head_img: '',
         title: '简单版1分钟！',
         type_name: '简单注册',
@@ -266,6 +270,8 @@ var _default = {
         price: '6' },
 
       {
+        id: 2,
+        is_top: true,
         head_img: '',
         title: '不下载扫码就过',
         type_name: '简单注册',
@@ -275,6 +281,8 @@ var _default = {
         price: '8' },
 
       {
+        id: 3,
+        is_top: true,
         head_img: '',
         title: '抖音砍价超简单',
         type_name: '简单注册',
@@ -284,6 +292,8 @@ var _default = {
         price: '30' },
 
       {
+        id: 4,
+        is_top: true,
         head_img: '',
         title: '百度简单测试',
         type_name: '简单注册',
@@ -293,6 +303,8 @@ var _default = {
         price: '0.6' },
 
       {
+        id: 5,
+        is_top: true,
         head_img: '',
         title: '来登录下 秒过',
         type_name: '简单注册',
@@ -302,6 +314,8 @@ var _default = {
         price: '30' },
 
       {
+        id: 6,
+        is_top: true,
         head_img: '',
         title: '简单一分钟任务',
         type_name: '简单注册',
@@ -323,20 +337,31 @@ var _default = {
       this.this_type = item;
       this.is_type = false;
     },
-    //切换新手区
-    noviceZone: function noviceZone() {
-
-    },
-    //切换高手区
-    masterZone: function masterZone() {
-
+    //切换新手区/切换高手区
+    changeZone: function changeZone(t) {
+      console.log(t);
+      this.param.order = this.param.order === t ? 0 : t,
+      this.seekChange();
     },
     //搜索任务
     searchTask: function searchTask(event) {
       console.log(event.target.value);
       this.param.search = event.target.value;
       console.log(this.param);
+    },
+    //跳转详情页
+    toTask: function toTask(index) {
+      console.log(index);
+      uni.navigateTo({
+        url: '../task/taskInfo?id=' + index });
+
+    },
+    seekChange: function seekChange() {
+      this.param.page = 1,
+      this.is_data = true,
+      this.getDataList();
     } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 17 */

@@ -13,7 +13,7 @@
 				</view>
 				<text>{{info.content}}</text>
 			</view>
-			<view  class="img-list">
+			<view class="img-list">
 				<image @click="previewImage(0)" class="img" mode="aspectFill" :src="info.qrcode_group"
 					v-if="info.qrcode_group"></image>
 				<image @click="previewImage(1)" class="img" mode="aspectFill" :src="info.qrcode_user"
@@ -54,15 +54,23 @@
 				this.$emit("donwLoadApp");
 			},
 			previewImage: function(n) {
-				console.log(n);
-				for (var e = [this.info.qrcode_group, 
-				this.info.qrcode_user],
-				 t = this.info.imgs, i = 0; i < t.length; i++) 
-				 e.push(t[i]);
-				console.log(e), o.previewImage({
-					urls: e,
-					current: e[n]
-				});
+				var e;
+				if(this.info.qrcode_group && this.info.qrcode_user){
+					e = [this.info.qrcode_group, this.info.qrcode_user]
+				}else if(!this.info.qrcode_group && this.info.qrcode_user){
+					e = [this.info.qrcode_user]
+				}else if(!this.info.qrcode_user && this.info.qrcode_group){
+					e = [this.info.qrcode_group]
+				}else{
+					e = []
+				}
+				var t = this.info.imgs
+				for (var i = 0; i < t.length; i++)
+					e.push(t[i]);
+					uni.previewImage({
+						urls: e,
+						current: e[n]
+					});
 			},
 			operFn: function() {
 				this.show_oper = !this.show_oper;

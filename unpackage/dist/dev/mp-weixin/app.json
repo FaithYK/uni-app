@@ -4,7 +4,8 @@
     "pages/proj/proj",
     "pages/news/news",
     "pages/user/user",
-    "pages/news/newsDetail"
+    "pages/news/newsDetail",
+    "pages/task/taskInfo"
   ],
   "subPackages": [],
   "window": {

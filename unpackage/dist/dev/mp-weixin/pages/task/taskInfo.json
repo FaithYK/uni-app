@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "任务",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "a-login": "/components/a-login/a-login",
+    "a-papup": "/components/a-papup/a-papup"
+  }
+}

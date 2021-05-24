@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/a-noData/a-noData":1,"components/task-item/task-item":1,"components/a-seek/a-seek":1,"components/a-tabber/bg-tabber":1,"pages/proj/inviteItem":1,"pages/proj/newProj":1,"pages/proj/projItem":1,"pages/news/newsItem":1};
+/******/ 		var cssChunks = {"components/a-noData/a-noData":1,"components/task-item/task-item":1,"components/a-seek/a-seek":1,"components/a-tabber/bg-tabber":1,"pages/proj/inviteItem":1,"pages/proj/newProj":1,"pages/proj/projItem":1,"pages/news/newsItem":1,"components/a-login/a-login":1,"components/a-papup/a-papup":1,"components/uni-popup/uni-popup":1,"components/uni-transition/uni-transition":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/a-noData/a-noData":"components/a-noData/a-noData","components/noData/noData":"components/noData/noData","components/task-item/task-item":"components/task-item/task-item","components/a-seek/a-seek":"components/a-seek/a-seek","components/a-tabber/bg-tabber":"components/a-tabber/bg-tabber","pages/proj/inviteItem":"pages/proj/inviteItem","pages/proj/newProj":"pages/proj/newProj","pages/proj/projItem":"pages/proj/projItem","pages/news/newsItem":"pages/news/newsItem"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/a-noData/a-noData":"components/a-noData/a-noData","components/noData/noData":"components/noData/noData","components/task-item/task-item":"components/task-item/task-item","components/a-seek/a-seek":"components/a-seek/a-seek","components/a-tabber/bg-tabber":"components/a-tabber/bg-tabber","pages/proj/inviteItem":"pages/proj/inviteItem","pages/proj/newProj":"pages/proj/newProj","pages/proj/projItem":"pages/proj/projItem","pages/news/newsItem":"pages/news/newsItem","components/a-login/a-login":"components/a-login/a-login","components/a-papup/a-papup":"components/a-papup/a-papup","components/uni-popup/uni-popup":"components/uni-popup/uni-popup","components/uni-transition/uni-transition":"components/uni-transition/uni-transition"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
