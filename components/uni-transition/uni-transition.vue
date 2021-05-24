@@ -6,7 +6,8 @@
 </template>
 
 <script>
-		name: "uniTransition";
+	export default {
+		name: "uniTransition",
 		props: {
 			show: {
 				type: Boolean,
@@ -14,17 +15,17 @@
 			},
 			modeClass: {
 				type: Array,
-				default: function() {
+				default: () => {
 					return [];
 				}
-			}
+			},
 			duration: {
 				type: Number,
 				default: 300
 			},
 			styles: {
 				type: Object,
-				default: function() {
+				default: () => {
 					return {};
 				}
 			}
