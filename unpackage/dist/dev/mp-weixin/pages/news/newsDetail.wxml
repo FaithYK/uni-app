@@ -1,0 +1,1 @@
+<view class="news-detail"><view class="title">{{info.title}}</view><text class="time" hidden="{{!info.con}}">{{'时间：'+info.add_time+'     浏览：'+info.view_num+'     文章来源：'+(info.remark||'网络')}}</text><view class="con"><rich-text nodes="{{info.con}}"></rich-text></view></view>

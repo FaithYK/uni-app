@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+			}
+		}, {
+			"path": "pages/proj/proj",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/news/news",
+			"style": {
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/user/user",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "pages/news/newsDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资讯详情",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#ffffff",
+				"navigationBarTextStyle": "black"
+            }
+            
+        }
+        ,{
+            "path" : "pages/task/taskInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "任务",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "松鼠帮帮",
+		"navigationBarBackgroundColor": "#307CF8",
+		"backgroundColor": "#ffffff"
+	},
+	"tabBar": {
+		"color": "#B2B2B2",
+		"selectedColor": "#35A2FF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		// "midButton": {
+		// 	"height": "65px",
+		// 	"width": "65px"
+		// },
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/img/tab/3-1.png",
+				"selectedIconPath": "static/img/tab/3-2.png",
+				"text": "帮帮赚"
+			},
+			{
+				"pagePath": "pages/proj/proj",
+				"iconPath": "static/img/tab/1-1.png",
+				"selectedIconPath": "static/img/tab/1-2.png",
+				"text": "推项目"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"iconPath": "static/img/tab/2-1.png",
+				"selectedIconPath": "static/img/tab/2-2.png",
+				"text": "舆情参考"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/img/tab/4-1.png",
+				"selectedIconPath": "static/img/tab/4-2.png",
+				"text": "我的"
+			}
+		]
+	}
+}

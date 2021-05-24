@@ -1,0 +1,1 @@
+<view class="no-data"><image class="errer" mode src="../../static/img/error.png"></image><view class="text _p">{{text}}</view></view>

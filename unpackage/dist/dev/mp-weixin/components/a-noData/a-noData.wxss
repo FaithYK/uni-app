@@ -1,0 +1,18 @@
+
+.no-data {
+	width: 100%;
+	height: auto;
+	padding: 200rpx 0 0;
+}
+.no-data .errer {
+	width: 200rpx;
+	height: 190rpx;
+	display: block;
+	margin: 0 auto;
+}
+.no-data .text {
+	text-align: center;
+	font-size: 32rpx;
+	color: #b2b2b2;
+}
+

@@ -1,0 +1,10 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "a-seek": "/components/a-seek/a-seek",
+    "a-tab-ber": "/components/a-tabber/bg-tabber",
+    "invite-item": "/pages/proj/inviteItem",
+    "new-proj": "/pages/proj/newProj",
+    "proj": "/pages/proj/projItem"
+  }
+}

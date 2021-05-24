@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "a-seek": "/components/a-seek/a-seek",
+    "news-item": "/pages/news/newsItem"
+  }
+}
