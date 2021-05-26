@@ -4,10 +4,18 @@
 			<view class="header">松鼠帮帮</view>
 			<view @click="toLink" class="user-info" v-if="!login_info.is_login">
 				<image class="face" src="../../static/img/user/face.png"></image>
+				<!--#ifdef MP-WEIXIN-->
 				<view class="user">
 					<text class="no-name">获取微信头像</text>
 				</view>
+				<!--#endif-->
+				<!--#ifdef APP-PLUS || H5-->
+				<view class="user">
+					<text class="no-name">登录</text>
+				</view>
+				<!--#endif-->
 			</view>
+			<!--#ifdef MP-WEIXIN-->
 			<view class="user-info" v-else>
 				<image class="face" :src="info.head_img"></image>
 				<view class="user">
@@ -20,10 +28,43 @@
 					</view>
 				</view>
 			</view>
-			<view class="wallet">{{'我的钱包：￥'+(info.remain||'--')+''}}<button @click="donwLoadApp" class="extract"
-					type="default">提现</button>
+
+			<view class="wallet">{{'我的钱包：￥'+(info.remain||'--')+''}}
+				<button @click="donwLoadApp" class="extract" type="default">提现</button>
 			</view>
+			<!--#endif-->
+			<!--#ifdef H5 || APP-PLUS-->
+			<view class="detail">
+				<view class="info-detail">
+					<view style="display: flex;flex-direction: row;justify-content: space-between;">
+						<view class="detail-num">
+							<view>徒弟人数</view>
+							<view><text>0</text>人</view>
+						</view>
+						<view class="detail-btn">查看明细</view>
+					</view>
+					<view class="line"></view>
+					<view>累计收徒收益</view>
+					<view><text>0.00</text>元</view>
+
+				</view>
+				<view class="info-detail">
+					<view style="display: flex;flex-direction: row;justify-content: space-between;">
+						<view class="detail-num">
+							<view>钱包余额</view>
+							<view><text>0.00</text>元</view>
+						</view>
+						<view class="detail-btn">查看明细</view>
+					</view>
+					<view class="line"></view>
+					<view style="padding-top: 10rpx;">累计做单收入</view>
+					<view><text>0.00</text>元</view>
+
+				</view>
+			</view>
+			<!--#endif-->
 		</view>
+		<!--#ifdef MP-WEIXIN-->
 		<view class="user-two">
 			<view @click="totaskList" class="item">我发的单<image class="icon" src="../../static/img/user/1.png"></image>
 			</view>
@@ -32,8 +73,7 @@
 		</view>
 		<view class="user-title">其他</view>
 		<view class="user-item-list">
-			<view @click="toivcode" class="user-item"
-				v-if="info.show_code">
+			<view @click="toivcode" class="user-item" v-if="info.show_code">
 				<image class="icon" src="../../static/img/user/u0.png"></image>
 				<text class="text">填邀请码</text>
 			</view>
@@ -50,6 +90,62 @@
 				<text class="text">邀请下载</text>
 			</view>
 		</view>
+		<!--#endif-->
+		<!--#ifdef APP-PLUS || H5-->
+		<view class="user-h5-two">
+			<view @click="totaskList" class="item">我发的单</image>
+			</view>
+			<view @click="toacceptList" class="item">我接的单</image>
+			</view>
+			<view @click="totaskList" class="item">我发的项目群</image>
+			</view>
+			<view @click="toacceptList" class="item">我发的文章</image>
+			</view>
+		</view>
+		<view class="user-title">其他</view>
+		<view class="user-item-list" style="padding-bottom: 50px;">
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">新手奖励</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">推广赚钱</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">游戏赚</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">发单</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">消息列表</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">官方Q群</text>
+			</view>
+			<view @click="toadvise" class="user-item">
+				<image class="icon" src="../../static/img/user/u3.png"></image>
+				<text class="text">客服</text>
+			</view>
+			<view @click="toreal" class="user-item">
+				<image class="icon" src="../../static/img/user/u1.png"></image>
+				<text class="text">收款实名</text>
+			</view>
+			<view @click="toivcode" class="user-item">
+				<image class="icon" src="../../static/img/user/u0.png"></image>
+				<text class="text">版本更新</text>
+			</view>
+			<view @click="tocopyUrl('https://share.foretellmaster.com/share-ssbb/download')" class="user-item">
+				<image class="icon" src="../../static/img/user/u5.png"></image>
+				<text class="text">设置</text>
+			</view>
+		</view>
+		<!--#endif-->
 	</view>
 </template>
 
@@ -101,7 +197,7 @@
 
 	#user .user-top .user-info {
 		width: 100%;
-		height: 200rpx;
+		height: 240rpx;
 		display: flex;
 		padding: 0 30rpx;
 		box-sizing: border-box;
@@ -200,6 +296,55 @@
 		box-sizing: border-box;
 	}
 
+	#user .user-top .detail {
+		display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+		width: 100%;
+		height: 200rpx;
+		padding: 18rpx 4rpx;
+		position: absolute;
+		margin-top: -60px;
+	}
+
+	#user .user-top .detail .info-detail {
+		width: 320rpx;
+		height: 90px;
+		background: lightblue;
+		margin: 0 8px;
+		padding: 5px 0px 5px 10px;
+		border-radius: 24rpx;
+	}
+
+	#user .user-top .detail .info-detail .detail-btn {
+		width: 65px;
+		height: 25px;
+		background: $uni-color-primary;
+		color: #FFFFFF;
+		line-height: 25px;
+		text-align: center;
+		border-start-start-radius: 30rpx;
+		border-end-start-radius: 30rpx;
+		margin-top: 16rpx;
+		font-size: 14px;
+		right: 0;
+	}
+
+	#user .user-top .detail .info-detail view {
+		font-size: 28rpx;
+	}
+
+	#user .user-top .detail .info-detail view text {
+		color: $uni-color-primary;
+	}
+
+	#user .user-top .detail .info-detail .line {
+		height: 1rpx;
+		width: 300rpx;
+		background: #000000;
+		margin: 5px 0px;
+	}
+
 	#user .user-top .wallet .extract {
 		width: 130rpx;
 		height: 60rpx;
@@ -269,6 +414,35 @@
 		height: 84rpx;
 	}
 
+	#user .user-h5-two {
+		padding: 30rpx;
+		flex-wrap: wrap;
+		margin-top: 50px;
+	}
+
+	#user .user-h5-two,
+	#user .user-h5-two .item {
+		display: flex;
+		-webkit-box-pack: justify;
+		justify-content: space-between;
+	}
+
+	#user .user-h5-two .item {
+		width: 330rpx;
+		height: 140rpx;
+		-webkit-box-align: center;
+		align-items: center;
+		padding: 0 30rpx;
+		background: #fff;
+		box-shadow: 0rpx 8rpx 40rpx -7rpx rgba(112, 144, 176, .44);
+		border-radius: 24rpx;
+		box-sizing: border-box;
+		font-size: 32rpx;
+		font-weight: 700;
+		color: #292828;
+		margin: 8px 0;
+	}
+
 	#user .user-title {
 		font-size: 32rpx;
 		color: #000;
@@ -310,5 +484,13 @@
 		line-height: 80rpx;
 		margin-top: 200rpx;
 		border-radius: 10rpx;
+	}
+
+	#user .user-title-h5 {
+		// position: relative;
+		font-size: 32rpx;
+		color: #000;
+		padding: 20rpx 30rpx;
+		font-weight: 700;
 	}
 </style>
