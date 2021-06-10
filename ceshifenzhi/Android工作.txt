@@ -1,0 +1,244 @@
+账号和密码：
+1.GitLab的账号密码：faith_yangkui@163.com      WMYIZHM.1234yk
+2.JIRA账号和密码： 用户名：yk    密码：WMYIZHM.1234yk
+   修改为禅道：http://zentao.tcsoft.info:89/index.php?m=my&f=index    用户名：yangkui    密码：WMYIZHM.1234yk
+3.福田APP测试账号和密码：test2    test2        huangdehong、11111111
+4.阿里邮箱账号和密码： yangkui@interlib.com.cn       yang*1234   安全问题：最喜欢的颜色：五彩斑斓的黑
+5.蓝湖账号和密码：faith_yangkui@163.com    WMYIZHM.1234yk
+6.OA系统账号和密码：yangkui   WMYIZHM.1234yk
+7.豆瓣的账号和密码： faith   WMYIZHM1234      邮箱：1053255269@qq.com
+8.公司借还接口：http://openlibapi.mydoc.io/   密码：openlib123
+9.襄阳项目的微信登录测试账号和密码：445281199306104811 证号      密码111111
+10.github的账号和密码：FaithYK      wmyizhm.1234
+11.蔡盛茂U微账号： uweicsm   密码： csm112233
+12.U微地址：https://uwei.dataesb.com/admin/miniProgram/certificate/type?miniToken=MINI7a6073ce56eb
+13.公司内部测试地址(android)：http://10.10.6.89:28081/openlib/robots.txt   读者账号：a1  密码：111111   操作员：admin
+测试的时候：例如获取柜子token: http://10.10.6.89:28081/openlib/service/barcode/token?appid=phoneapp&secret=ydffhyafgis2dhedeanxegd143tzbr
+14.慕客账号和密码： faith_yangkui@163.com    WMYIZHM.1234yk
+15.借阅宝小程序的接口文档：http://120.25.95.146:8080/refer/miniBorrow-v1/overview
+16.公司Interlib图书集群管理系统(包含删除读者信息)：http://j.tcsoft.info:28081/interlib3/system_index?csrftoken=f59ffe55d0fd464da675e2af04e4d761   账号：dhj   密码：111111
+17.借阅宝小程序GitLab提交地址：https://gitlab.tcsoft.info:8988/wechat/lib-applets
+18.广图测试(可删除证)	http://121.8.227.21:8889/interlib3	账号：tcsoft---对应密码：	lrg321  账号：admin1---对应密码: 123456
+19.新版朗读云的接口地址：http://10.10.4.80:20002/swagger-ui.html#/
+20.查询微信公众号Token的网址(新框架)：https://uwei.dataesb.com/internal/searchWxuser?secretCode=openSesame
+21.查询微信公众号Token的网址(旧框架)：http://119.23.155.181/index.php?g=Wap&m=Bakk&a=searchInfo&token=flgcgt1462325892
+22.XMind账号：faith_yangkui@163.com 密码：wmyizhm.1234yk
+23.uwei后台测试地址：https://uwei-test.tcsoft.info/admin/auth/login 账号：admin   密码：admin
+
+地址：
+1.福田文体安全管理APP项目地址：http://j.tcsoft.info:8989/APP/FTCulturalCentre
+2.福田APP后台部分接口文档：http://www.sosoapi.com/pass/apidoc/share/forward.htm?shareKey=f3a03ce6a9d3366c8bda566d6aa33b17
+3.APP后台地址：http://app.dataesb.com:8089/appsup/loginController.do?login    账号：admin    密码：tcsoft205
+4.APP更新版本后测试接口：http://app.dataesb.com:8089/appsup/test/appversion.action?
+platform=android&id=C2GD0755023SC
+5.interlib查看记录(在意见反馈)：http://app.dataesb.com:8089/appsup/loginController.do?login  账号：tjsts  密码：tjsts123
+6.公司OA系统地址：http://oa.interlib.cn:88/oa/index.jsp
+7.小程序地址：https://uwei.dataesb.com/admin/miniProgram/certificate/config/create  账号：uweicsm   密码：csm112233
+8.借阅宝小程序的账号密码：tcwechat123@163.com（邮箱密码：Tcinterlib2018）
+
+
+
+向日葵账号密码：账号：13751796853 密码：960114yk
+谷歌插件的网址：https://chrome.pictureknow.com/
+
+
+http://oa.interlib.cn:88/oa/oa.jsp
+
+项目地址：
+1.nfcbooktools项目地址：http://j.tcsoft.info:8989/APP/nfcbooktools
+2.襄阳项目地址：http://j.tcsoft.info:8989/APP/andibigbookcase.git
+3.rfid界面获取图片：http://j.tcsoft.info:8183/websearch/metares?cmdACT=getImages&type=0&isbns=9787530759172,9787221127358
+4.  jks目录：E:\YKK\keystore      密码：111111      key alias:  tcsoftkey
+    平常测试使用  newkey.jks  密码：123456  key alias: key0
+
+常用网址：
+1.Git代码提交：https://www.cnblogs.com/vinzen/p/9652909.html
+2.使用git拉取非master的代码命令：
+     使用Git下载XiangYangDev 分支代码，使用命令例如：git clone -b XiangYangDev http://j.tcsoft.info:8989/APP/andibigbookcase
+3.Android 6.0以上权限问题：https://mp.weixin.qq.com/s/BiNy3jl8Q-fNUuLd6eYf4g
+4.去除抖音水印：http://www.videotool.com.cn/
+5.SourceTree修改账户密码的地址C:\Users\LDQ\AppData\Local\Atlassian\SourceTree      userhosts和passwd文件
+
+
+借阅柜种类：四种
+1.襄阳  大屏幕的标准版  8柜门
+2.阿里园区  威海基础版          阿里项目的升级，build.gradle中的版本后和后台升级的版本号一致
+3.四楼 7寸4柜门的mini版
+4.10寸屏幕的4门
+
+	
+
+更新apk步骤：
+1.修改versionCode和versionName(要比原始版本高，阿里项目后台和versionCode一样)
+2.签名打包成apk
+直接安装apk到手机或者是安卓机上命令： adb install apk + 
+
+图书图片的数据jsonp:
+	http://j.tcsoft.info:8183/websearch/metares?cmdACT=getImages&type=0&isbns=9787530759172,9787221127358
+
+
+判断权限状态：
+import android.support.v4.content.PermissionChecker;
+
+private static boolean isGranted(final String permission) {
+    return Build.VERSION.SDK_INT < Build.VERSION_CODES.M
+            || PackageManager.PERMISSION_GRANTED
+            == PermissionChecker.checkCallingOrSelfPermission(Utils.getApp(), permission);
+}
+
+注* ：https://developer.android.com/studio/build/application-id.html?hl=zh-cn网址打不开换成
+     https://developer.android.google.cn/studio/build/application-id.html?hl=zh-cn
+
+多线程可以使得任务执行的效率得到提升，由于在线程切换时同样会带来一定的开销代价，并且多个线程会导致系统资源占用的增加。
+
+
+
+1.福田安全管理APP
+2.Nfc  APP    测试账号：admin  密码：111111        账号：holdtest   密码：111111
+3.襄阳借书柜
+4.手持签到项目
+4.阿里借阅柜
+5.荣城项目
+6.宜城借书柜
+
+手持签到项目地址：http://j.tcsoft.info:8989/APP/scansign.git
+
+
+搭建简单的Web服务器：
+使用：1.在 D:\InstallPath\Apache24\htdocs 文件家中新建xxx.xml文件、xxx.json文件
+           2.在浏览器上输入http://10.10.3.130/xxx.xml  或 http://10.10.3.130/xxx.json
+
+http://121.63.247.29:8086/openlib/service/barcode/loanbook?rdid=1&token=051bf51c5c596826dbb8f12c4504313f-0cd98ac70c6c6dccd9ae37cd05f4aa0c
+&attachmentloanflag=1&barcode=?&opuser=?
+
+
+地址：广州市黄埔区科学大道中科汇金谷一街五号金升阳大厦201
+TEL：020-85550894   E-mail：interlib@163.com
+
+1.主界面：2分钟内无人操作，进入到 “轮播”  界面，继承BaseDispatchTouchActivity
+2.登录方式界面：  1分钟没有操作的话，返回主界面
+3.借书界面：1分钟内无任何操作，返回主界面
+4.参数设置界面：2分钟内无人操作，进入到 “轮播”  界面，继承BaseDispatchTouchActivity
+5.当前借阅界面：1分钟内无任何操作跳转到主界面
+6.扫脸界面：1分钟内无任何操作跳转到主界面
+7.管理员存书界面：1分钟内无任何操作  关闭页面
+8.管理员登录：2分钟内无人操作，进入到 “轮播”  界面，继承BaseDispatchTouchActivity
+9.管理员选择：2分钟内无人操作，进入到 “轮播”  界面，继承BaseDispatchTouchActivity
+10.管理员界面：1分钟内无任何操作 关闭页面
+11.协议界面：2分钟内无人操作，进入到 “轮播”  界面，继承BaseDispatchTouchActivity
+12.刷卡登录：1分钟内无任何操作 关闭页面
+
+
+//报考网址：
+https://www.eeagd.edu.cn/zkbk/login/login.jsp
+https://www.eeagd.edu.cn/selfec/
+
+010619302489   WMYIZHM1234  学位英语报名号：537970
+专业代码及名称：120201K工商管理
+身份证号码： 412825199507167329
+验证码： ZKI202005080106193024890801
+
+已通过：
+ 英语二、现代物流学、客户服务管理、销售业务管理
+未考：
+待报考：马克思主义基本原理概论、中国近现代史纲要
+
+010619302490   ldq112000
+已通过：
+ 英语二、现代物流学、中小企业战略管理、销售业务管理
+待报考：马克思主义基本原理概论、客户服务管理、中国近现代史纲要
+ 
+准考证号：010619101549
+密码：hui54321
+姓名：郭艳慧
+专业代码及名称：120201K工商管理
+身份证号码： 412726199506247520
+验证码： ZKI202005080106191015490803
+邮箱：1751745995@qq.com
+
+1、自考准考证号：010619302489
+2、目前已通过的科目： 英语(二)、 中国近现代史纲要、 马克思主义基本原理概论、 现代物流学、 现代企业管理信息系统、 企业管理咨询与诊断、 客户服务管理、 销售业务管理
+3、8月份报考的科目：人力资源开发与管理、资本运营与融资
+
+准考证号：010619302490
+密码：   ldq112000
+学位英语证号：
+姓名：李东晴
+   
+准考证号：010620302677
+密码：   ldd123456
+学位英语证号：324360
+密码：ldd123456
+姓名：刘丹丹
+身份证号：412725199603221502
+手机号：15239452930
+邮箱：376979645@qq.com
+
+准考证号：010620302681
+密码：   WYY840716
+学位英语证号：550318 密码：WYY84071
+密码：ldd123456
+姓名：王云英
+身份证号：412825198407165727
+手机号码：18737602818
+邮箱：18737602818@163.com
+
+//获取Token         
+http://www.interlib.hb.cn:8989/openlib//service/barcode/token?appid=phoneapp&secret=ydffhyafgis2dhedeanxegd143tzbr
+//借书接口
+http://www.interlib.hb.cn:8989/openlib//service/barcode/batchloanbook?overLoanType=2&rdid=411YCczj&token=e59365e050dcc553c55fc379c006f02e-5e58d7a3e3c8e2e251bcf77504219943&barcode=411YC153329&opuser=411YCczj
+处理器：i5-8265U、内存：8G、硬盘：512G SSD  显卡：MX150 2G、  
+
+2019年9月6日修改接口地址
+原来：
+http://api.interlib.com.cn/interlibopac/websearch
+修改为：
+https://book-resource.dataesb.com/websearch
+修改：DangqianjieyueFrag界面、HuodongyugaoAdapter、HuanshuqingdanAdapter、ReturnActivity
+
+
+借阅柜更新问题：
+A、若未提示更新框，原因：1.是否有网络  
+		            2.若是新项目还要看版本号，版本序号，程序名称是否设置，未设置的话代码获取版本号的时候解析数据异常
+		            3.版本号不对或者馆代码不对
+B、若一直弹出更新框，原因：1.是否能更新成功
+		               2.看是否是版本问题(如7.0权限问题)
+C、若刷卡和刷脸同时不工作的话，可能是USB的问题。
+
+
+
+Android切换夜间模式，需把style中的Light，修改为DayLight，才能切换夜间模式
+
+
+
+
+阿里系的热更新是以Native层替换方法表中的实现方法实现热修复[AndFix，Sophix等]
+腾讯美团为代表的的JAVA层实现热修复【Thinker，Robust等】
+前者即时修复，不需要重启APP，后者实现热修复必须重启APP。”
+
+MVVM + DataBinging:  单向绑定是@{属性值}，双向绑定则是@={属性值}
+参考链接：https://juejin.im/post/5d89d9f8f265da03f2340e2b
+
+香山里借阅柜的还书逻辑：
+1、点击还书按扭
+2、查找空柜门,进行还书操作(不存在空柜门，就开启储物柜；存在空柜门，开启空柜门)
+3、开启空柜门
+4、开启成功，检测图书是否存在
+5、图书存在调用还书接口，图书不存在，提示检测不到书籍
+
+
+清明好的诗句：
+1、梨花淡白柳深青，柳絮飞时花满城。惆怅东栏一株雪，人生看得几清明。
+清明好的文案：
+1、清明将至，思念欲浓，只言片语 道不尽绵长情意 手捧烛光 愿在天堂一切安好
+2、疫止行人不圈春，杨柳吐芽湖水温。欲与故人聊相聚，怎奈唯有音容忆
+3、清风微抚，明月高挂，一片相思一片情。天地之间，你我共同思念故人。冥冥之中，缘分仍旧再续。清风带去相思，明月点亮心门。
+4、草萋萋，雨绵绵，清明含泪祭奠；行缓缓，路漫漫，凝眸缭绕清烟；忆深深，思拳拳，难忘故人容颜；情切切，语千千，诉说此生挂牵。
+故人安息，生者康安。
+
+最初的位置
+我应该去爱你
+
+淘宝账号：18613018304 密码：ldd1996.
+
+
